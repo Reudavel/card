@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+    <style>
+        section{
+            background-image: url('https://images.pexels.com/photos/8386421/pexels-photo-8386421.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .reference{
+            position: absolute;
+            width: 20%;
+            top: 10px;
+            right: 10px;
+        }
+        .card{
+         
+            position: relative;
+            overflow: hidden;
+            background-color:black;
+            color: white;
+            border-radius: 10px;
+            width: 30%;
+        }
+        .images-section{
+            position: relative;
+            
+        }
+        .cover{
+             
+            width: 100%; /* width of container */
+            /* height: 30vh; */
+          /* height: 250px; */
+    /*height: 30vh;  height of container */
+    /* object-fit:cover; */
+    
+
+        }
+        .profile{
+            width: 50%;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%; /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%);   
+      
+        }
+    </style>
 </head>
 <body>
-    
+    <section>
+        <div class="card">
+            <div class="images-section">
+                <img class="cover" src="https://images.pexels.com/photos/10549262/pexels-photo-10549262.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="tesla car">
+                <img class="profile" src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="tesla logo">
+            </div>
+            
+            <h3>Name</h3>
+            <p>lorem + 10</p>
+            <div>
+                <p>link 1</p>
+                <p>link 2</p>
+            </div>
+            <span>Icons section</span>
+        </div>
+        <img class="reference" src="https://static.platzi.com/media/user_upload/Screenshot_20211008-214733~2-118b0208-56f6-43a7-907d-92e4f67e3019.jpg" alt="">
+    </section>
 </body>
 </html>
