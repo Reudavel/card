@@ -73,8 +73,9 @@
   
         }
         .text-section{
+            font: 1rem;
             height: 50%;
-            padding: 15px;
+            padding: 15px ;
             display: flex;
             flex-direction: column;
             /* justify-content: center;  primary axis */
@@ -85,15 +86,36 @@
         }
         
         .links-section{
+            font-size: 1rem;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content:space-between;
+            align-items: center;
+            padding: 0px 10% 0px 10%;
+            box-sizing: border-box;
+        }
+        .links-section a {
+            display:flex;
+            align-items: center;
+        }
+        .descripiton{
+            padding-left: 10%;
+            padding-right: 10%;
         }
         .icon-section{
+            vertical-align: middle;
+            width: 80%;
             display: flex;
             padding-bottom: 20px;
             padding-top:15px;
+            justify-content: space-around;
+            padding-left: 10px;
+            padding-right: 10px;
             
+        }
+
+        .icon-section span{
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -106,7 +128,7 @@
             </div>
             <div class="text-section">
                 <h3>Tesla</h3>
-                <p>Tesla's mission is to accelerate the world's transition to sustainable energy.</p>
+                <p class="descripiton">Tesla's mission is to accelerate the world's transition to sustainable energy.</p>
                 <div class="links-section">
                     <a href="https://www.google.com/maps/place/Tesla+HQ/@37.3941001,-122.2202302,12z/data=!4m5!3m4!1s0x808fb075776f1c3b:0xccc17e4da6b38370!8m2!3d37.3940932!4d-122.1501918"><span class="material-icons md-18">place</span>Palo Alto, CA, USA</a>
                     <a href="https://www.tesla.com/"><span class="material-icons md-18">link</span>tesla.com</a>
